@@ -12,11 +12,15 @@
 
 
   <body>
+
+
     <h1>Fore User Sign Up Form</h1>
 
 
     <form class="" action="http://requestb.in/1g990j21" method="post" enctype="multipart/form-data">
 
+      <fieldset>
+        <legend>Basic Info</legend>
       <aside>
         <label for="full-name">Full Name</label>
         <input type="text" placeholder="Syed Ali" name="name" value="" id="full-name">
@@ -37,7 +41,7 @@
         <input type="radio" name="side-type" id="dark-side" value="dark">
         <label for="dark-side">Dark</label>
 
-        <input type="radio" name="side-type" id="ligh-side" value="light">
+        <input type="radio" name="side-type" id="light-side" value="light">
         <label for="light-side">Light</label>
       </aside>
 
@@ -48,15 +52,13 @@
       </aside>
 
 
-    </form>
+    </fieldset>
 
 
 
 
-
-    <form class="" action="index.html" method="post">
-
-      <h1>Abilities</h1>
+    <fieldset>
+      <legend>Abilities</legend>
       <aside>
         <label>Light Saber</label>
         <select name="dropdown">
@@ -96,11 +98,45 @@
 
       </aside>
 
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Info</legend>
+
+  <aside>
+
+    <label for="mentor">Desired Mentor</label>
+
+    <input type="text" placeholder="Yoda" id="mentor" name="mentor">
+  </aside>
+
+  <aside>
+    <h4>Application Date</h4>
+    <input type="date" name="date">
+  </aside>
 
 
-    </form>
+  <aside>
+    <h4>Application Password</h4>
+    <input type="password" name="user-pass">
+  </aside>
 
+  <aside>
+    <h4>How do you get to the darkside?</h4>
+    <textarea name="name" rows="8" cols="40"></textarea>
 
+  </aside>
+
+  <aside>
+    <input type="reset" name="reset" value="start-over">
+    <input type="submit" name="form-submit" value="Apply">
+
+  </aside>
+  </fieldset>
+
+</form>
+
+  <footer>2016 The Republic</footer>
 
   </body>
 </html>
