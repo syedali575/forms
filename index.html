@@ -6,7 +6,7 @@
 
     <title>Working with forms</title>
 
-    <link rel="stylesheet" href="foms.css" type="text/css">
+    <link rel="stylesheet" href="forms.css" type="text/css">
 
   </head>
 
@@ -29,15 +29,73 @@
 
       <aside>
         <label for="email">Email</label>
-        <input type="text" name="email" value="" id="email">
+        <input type="text" name="email" placeholder="sa3@cox.net" value="" id="email">
       </aside>
 
       <aside>
-        <label for="dark-side">Side</label>
-        <input type="button" name="side-type" id="dark-side" value="dark">
-        <label for="light-side"></label>
-        <input type="button" name="side-type" id="ligh-side" value="light">
+        <label>Side:</label>
+        <input type="radio" name="side-type" id="dark-side" value="dark">
+        <label for="dark-side">Dark</label>
+
+        <input type="radio" name="side-type" id="ligh-side" value="light">
+        <label for="light-side">Light</label>
       </aside>
+
+      <aside>
+        <label for="story">Origin Story</label>
+        <textarea name="name" rows="8" cols="40" id="story"></textarea>
+
+      </aside>
+
+
+    </form>
+
+
+
+
+
+    <form class="" action="index.html" method="post">
+
+      <h1>Abilities</h1>
+      <aside>
+        <label>Light Saber</label>
+        <select name="dropdown">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">red</option>
+          <option value="red">red</option>
+        </select>
+      </aside>
+
+      <aside>
+        <h4>How many things can you levitate at once?</h4>
+        <input type="number" name="quantity" min="1" max="7">
+      </aside>
+
+      <aside>
+        <h4>Favorite Ability</h4>
+        <input type="text" placeholder="Precognition" name="abilitites">
+      </aside>
+
+      <aside>
+
+        <h4>Pilot Experience</h4>
+
+        <input type="checkbox" value="first_checkbox" id="box1">
+          <label for="box1">Speeder</label>
+        <input type="checkbox" value="second_checkbox"id="box2">
+          <label for="box2">Transport</label>
+        <input type="checkbox" value="third_checkbox" id="box3">
+          <label for="box3">X-Wing</label>
+        <input type="checkbox" value="fourth_checkbox" id="box4">
+          <label for="box4">TIE Fighter</label>
+        <input type="checkbox" value="fourth_checkbox" id="box4">
+            <label for="box4">Starship</label>
+        <input type="checkbox" value="fourth_checkbox" id="box4">
+              <label for="box4">Bantha</label>
+
+      </aside>
+
 
 
     </form>
