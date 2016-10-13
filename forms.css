@@ -1,5 +1,33 @@
 fieldset {
   display: inline-block;
+  vertical-align: top;
   width:300px;
-  height:500px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.side {
+  display: inline;
+  font-weight: 400;
+}
+
+input#full-name, input#email, input#ability, input#mentor {
+  width: 310px;
+}
+
+input#pw {
+  width: 150px;
+}
+
+input[type=submit], input[type=reset] {  
+  background: #7ec0ee;
+  border-radius: 5px;
 }

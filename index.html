@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
 
     <meta charset="utf-8">
@@ -16,85 +18,85 @@
 
     <h1>Fore User Sign Up Form</h1>
 
-
     <form class="" action="http://requestb.in/1g990j21" method="post" enctype="multipart/form-data">
 
       <fieldset>
         <legend>Basic Info</legend>
-      <aside>
-        <label for="full-name">Full Name</label>
-        <input type="text" placeholder="Syed Ali" name="name" value="" id="full-name">
-      </aside>
+            <aside>
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Syed Ali" name="user-name" value="" id="full-name">
+            </aside>
 
-      <aside>
-        <label for="file">Profile Pic</label>
-        <input type="file" name="picture-file" value="" id="file">
-      </aside>
+            <aside>
+              <label for="file">Profile Pic</label>
+              <input type="file" name="picture-file" id="file">
+            </aside>
 
-      <aside>
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="sa3@cox.net" value="" id="email">
-      </aside>
+            <aside>
+              <label for="email">Email</label>
+              <input type="text" name="email" placeholder="sa3@cox.net" value="" id="email">
+            </aside>
 
-      <aside>
-        <label>Side:</label>
-        <input type="radio" name="side-type" id="dark-side" value="dark">
-        <label for="dark-side">Dark</label>
+            <aside>
+              <label for="dark-side">Side:</label>
 
-        <input type="radio" name="side-type" id="light-side" value="light">
-        <label for="light-side">Light</label>
-      </aside>
+              <input type="radio" name="side-type" id="dark-side" value="dark">
+              <label for="dark-side" class="side">Dark</label>
 
-      <aside>
-        <label for="story">Origin Story</label>
-        <textarea name="name" rows="8" cols="40" id="story"></textarea>
+              <input type="radio" name="side-type" id="light-side" value="light">
+              <label for="light-side" class="side">Light</label>
+            </aside>
 
-      </aside>
-
-
+            <aside>
+              <label for="story">Origin Story</label>
+              <textarea name="origin-story" rows="8" cols="50" id="story"></textarea>
+            </aside>
     </fieldset>
-
-
 
 
     <fieldset>
       <legend>Abilities</legend>
+        <aside>
+          <label>Light Saber</label>
+            <select name="dropdown">
+              <option value="selectcolor">select color</option>
+              <option value="green">green</option>
+              <option value="blue">blue</option>
+              <option value="red">red</option>
+              <option value="purple">purple</option>
+            </select>
+        </aside>
+
+        <aside>
+          <label>How many things can you levitate at once?</label>
+          <input type="number" name="quantity" min="1" max="7">
+        </aside>
+
       <aside>
-        <label>Light Saber</label>
-        <select name="dropdown">
-          <option value="red">red</option>
-          <option value="green">green</option>
-          <option value="blue">red</option>
-          <option value="red">red</option>
-        </select>
+        <label for="ability">Favorite Ability</label>
+        <input type="text" placeholder="Precognition" name="abilities" id="ability">
       </aside>
 
       <aside>
-        <h4>How many things can you levitate at once?</h4>
-        <input type="number" name="quantity" min="1" max="7">
-      </aside>
+        <label for="box">Pilot Experience</label>
 
-      <aside>
-        <h4>Favorite Ability</h4>
-        <input type="text" placeholder="Precognition" name="abilitites">
-      </aside>
+        <input type="checkbox" value="second_checkbox"id="box1">
+        <label for="box1" class="side">Speeder</label>
 
-      <aside>
+        <input type="checkbox" value="third_checkbox" id="box2">
+        <label for="box2" class="side">Transport</label>
 
-        <h4>Pilot Experience</h4>
+        <input type="checkbox" value="fourth_checkbox" id="box3">
+        <label for="box3" class="side">X-Wing</label>
 
-        <input type="checkbox" value="first_checkbox" id="box1">
-          <label for="box1">Speeder</label>
-        <input type="checkbox" value="second_checkbox"id="box2">
-          <label for="box2">Transport</label>
-        <input type="checkbox" value="third_checkbox" id="box3">
-          <label for="box3">X-Wing</label>
         <input type="checkbox" value="fourth_checkbox" id="box4">
-          <label for="box4">TIE Fighter</label>
-        <input type="checkbox" value="fourth_checkbox" id="box4">
-            <label for="box4">Starship</label>
-        <input type="checkbox" value="fourth_checkbox" id="box4">
-              <label for="box4">Bantha</label>
+        <label for="box4" class="side">TIE Fighter</label>
+
+        <input type="checkbox" value="fourth_checkbox" id="box5">
+        <label for="box5" class="side">Starship</label>
+
+        <input type="checkbox" value="first_checkbox" id="box6">
+        <label for="box6" class="side">Bantha</label>
 
       </aside>
 
@@ -103,40 +105,37 @@
     <fieldset>
       <legend>Account Info</legend>
 
-  <aside>
+      <aside>
+        <label for="mentor">Desired Mentor</label>
+        <input type="text" placeholder="Yoda" id="mentor" name="mentor">
+      </aside>
 
-    <label for="mentor">Desired Mentor</label>
-
-    <input type="text" placeholder="Yoda" id="mentor" name="mentor">
-  </aside>
-
-  <aside>
-    <h4>Application Date</h4>
-    <input type="date" name="date">
-  </aside>
+      <aside>
+        <label for="app-date">Application Date</label>
+        <input type="date" name="application-date" id="app-date">
+      </aside>
 
 
-  <aside>
-    <h4>Application Password</h4>
-    <input type="password" name="user-pass">
-  </aside>
+      <aside>
+        <label for="pw">Application Password</label>
+        <input type="password" name="password" id="pw">
+      </aside>
 
-  <aside>
-    <h4>How do you get to the darkside?</h4>
-    <textarea name="name" rows="8" cols="40"></textarea>
+      <aside>
+        <label for="text">How do you get to the darkside?</label>
+        <textarea id="text" name="name" rows="8" cols="40"></textarea>
+      </aside>
 
-  </aside>
+      <aside>
+        <input type="reset" name="reset" value="start-over">
+        <input type="submit" name="form-submit" value="Apply">
+      </aside>
 
-  <aside>
-    <input type="reset" name="reset" value="start-over">
-    <input type="submit" name="form-submit" value="Apply">
-
-  </aside>
-  </fieldset>
+    </fieldset>
 
 </form>
 
-  <footer>2016 The Republic</footer>
+  <footer>&copy 2016 The Republic</footer>
 
   </body>
 </html>
